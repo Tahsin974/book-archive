@@ -1,0 +1,9 @@
+body{
+  background-color: #e2dec5;
+}
+.card-img-top{
+  height: 200px !important;
+}
+#spinner{
+  display: none;
+}

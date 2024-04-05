@@ -8,13 +8,21 @@
     <link rel="stylesheet" href="My Bootstrap/css/bootstrap.min.css">
     <!-- custom CSS link -->
     <link rel="stylesheet" href="CSS/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/5hV-C1mN_400x400.jpg" type="image/x-icon">
 </head>
-<body>
+
+<body class="container">
     <!---------------
         header start
     ------------------>
-    <header>
-
+    <header class="my-5 text-center">
+        <img src="images/5hV-C1mN_400x400.jpg" alt="">
+        <h1 class="my-5 fw-bold">Welcome To Open-Library</h1>
+        <div class="input-group mx-auto my-5 w-50">
+            <input id="search-field" type="text" class="form-control" placeholder="Search A Book Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button onclick="searchButton()" class="btn btn-outline-secondary btn-danger text-light" type="button" id="button-addon2">Search</button>
+          </div>
     </header>
     <!---------------
         header end
@@ -24,7 +32,21 @@
         main start
     ------------------>
     <main>
-        
+        <!-- Spinner -->
+        <div class="d-flex justify-content-center my-5">
+            <div id="spinner" class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+
+          <!-- Error Message -->
+        <div id="error-message" class="my-5"></div>
+
+
+        <!-- Result Area -->
+        <div id="result-area" class="row row-cols-1 row-cols-md-2  row-cols-lg-3 g-4">
+          </div>
+
     </main>
 
         <!---------------
